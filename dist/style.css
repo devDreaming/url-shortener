@@ -649,3 +649,8 @@ footer .social-links i {
     transform: translate(-46%, -50%);
   }
 }
+@media screen and (min-width: 1124px) {
+  .header h2, .header p {
+    margin-left: 0;
+  }
+}

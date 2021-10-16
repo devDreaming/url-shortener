@@ -554,7 +554,7 @@ footer {
         .spacer {
             height: 4.5rem;
         }
-        
+
         .form-field {
             flex-flow: row nowrap;
             padding: 2.8rem 3rem;
@@ -770,6 +770,14 @@ footer {
             max-width: 50rem;
             top: 46%;
             transform: translate(-46%, -50%);
+        }
+    }
+}
+
+@media screen and (min-width: 1124px) {
+    .header {
+        h2, p {
+            margin-left: 0;
         }
     }
 }
