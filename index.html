@@ -21,6 +21,8 @@
 </head>
 <body>
 
+  <div id="filter"></div>
+
   <div class="navigation">
     <nav>
       <h1 style="display: none;">Shortly</h1>
@@ -76,6 +78,7 @@
   </header>
 
   <main>
+    <p id="loading">Loading...</p>
     <div class="form-field">
       <input type="text" id="url-input-field" placeholder="Shorten a link here...">
       <div id="error-mobile">Please add a link</div>
@@ -84,13 +87,13 @@
     <div id="error-desktop">Please add a link</div>
     <div class="spacer"></div>
     <div class="results" id="results">
-      <!-- <div class="result">
+      <div class="result">
         <p class="url">https://docs.google.com/spreadsheets/d/18UQ_1_awjWCEHfrkyclfy7B_o9tgT4xzmR_xFuYoMgU/edit#gid=815296917</p>
         <div class="expand"></div>
         <hr>
         <p class="newUrl">https://rel.ink/k4lKyk</p>
         <button class="copy-button">Copy</button>
-      </div> -->
+      </div>
     </div>
 
     <div class="features-title">

@@ -8,6 +8,8 @@ const urlToCopy = document.getElementsByClassName("newUrl");
 const copyButton = document.getElementsByClassName("copy-button");
 const errorMessageMobile = document.getElementById("error-mobile");
 const errorMessageDesktop = document.getElementById("error-desktop");
+const backgroundFilter = document.getElementById("filter")
+const loading = document.getElementById("loading")
 
 let newUrlToShorten = "";
 let newlyShortenedUrl = "";
@@ -22,7 +24,13 @@ resultsList.addEventListener("click", (e) => {
 // Send a GET request to the API, waiting for the response
 async function fetchShortenedUrl(url) {
     try {
+        backgroundFilter.style.display = "block"
+        loading.style.display = "block"
+        document.querySelector("body").style.overflow = "hidden"
         let response = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`)
+        backgroundFilter.style.display = "none"
+        loading.style.display = "none"
+        document.querySelector("body").style.overflow = "scroll"
         let data = await response.json()
         // Receive the response and save it
         newlyShortenedUrl = data.result.short_link;
@@ -32,6 +40,7 @@ async function fetchShortenedUrl(url) {
         newestResultElement.innerHTML = 
             `<p class="url">${newUrlToShorten}</p>
             <div class="expand"></div>
+            <hr>
             <p class="newUrl">${newlyShortenedUrl}</p>
             <button data-url="${newlyShortenedUrl}" class="copy-button">Copy</button>`;
         resultsList.insertBefore(newestResultElement, resultsList.firstChild)
