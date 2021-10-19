@@ -2,7 +2,7 @@ html, body, main, header, div, h1, h2, h3, h4, h5, h6, li, ul, button {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
 }
 
@@ -38,13 +38,14 @@ button {
   background-color: #2acfcf;
   color: white;
   text-decoration: none;
-  padding: 0.7rem 1.7rem;
+  padding: .7rem 1.7rem;
   border-radius: 3rem;
-  margin: 0.7rem 1.7rem;
+  margin: .7rem 1.7rem;
   transition: all 300ms;
 }
+
 .button a:hover {
-  opacity: 0.5;
+  opacity: .5;
   color: white;
 }
 
@@ -60,28 +61,34 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+
 nav img {
-  padding-top: 0.5rem;
+  padding-top: .5rem;
 }
+
 nav li a {
   padding-left: 2rem;
 }
+
 nav a {
   font-size: 16px;
   font-weight: 700;
   transition: all 300ms;
 }
+
 nav a:hover {
   color: #232127;
 }
+
 nav .button a {
-  padding: 0.5rem 1.2rem;
-  margin: 0.5rem 1.2rem;
+  padding: .5rem 1.2rem;
+  margin: .5rem 1.2rem;
 }
 
 .navigation {
   width: 100%;
 }
+
 .navigation .mobile-menu {
   display: none;
   background-color: #3b3054;
@@ -96,40 +103,50 @@ nav .button a {
   top: 5.5rem;
   text-align: center;
 }
+
 .navigation .mobile-menu li {
   padding-bottom: 1.5rem;
 }
+
 .navigation .mobile-menu a {
   color: white;
-  padding: 0.75rem 0;
+  padding: .75rem 0;
   font-size: 18px;
 }
+
 .navigation .mobile-menu hr {
   border: none;
   border-top: 1px solid #9e9aa7;
   width: 100%;
-  padding-bottom: 0.8rem;
+  padding-bottom: .8rem;
 }
+
 .navigation .mobile-menu .mobile-login {
-  padding-bottom: 0.5rem;
+  padding-bottom: .5rem;
 }
+
 .navigation .mobile-menu .button {
   margin: 2rem 0 0 0;
 }
+
 .navigation .mobile-menu .button a {
   padding: 0.7rem 1.7rem;
   margin: 0;
 }
+
 .navigation .mobile-checkbox {
   display: none;
 }
+
 .navigation .mobile-checkbox:checked ~ .mobile-menu {
   display: flex;
   left: 1.5rem;
 }
+
 .navigation .mobile-icon {
   position: relative;
 }
+
 .navigation .mobile-icon, .navigation .mobile-icon::before, .navigation .mobile-icon::after {
   width: 1.4rem;
   height: 3px;
@@ -137,34 +154,43 @@ nav .button a {
   display: inline-block;
   border-radius: 2px;
 }
+
 .navigation .mobile-icon::before, .navigation .mobile-icon::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
-  transition: all 0.2s;
+  transition: all .2s;
 }
+
 .navigation .mobile-icon::before {
-  top: -0.5rem;
+  top: -.5rem;
 }
+
 .navigation .mobile-icon::after {
-  top: 0.5rem;
+  top: .5rem;
 }
+
 .navigation .mobile-button:hover {
   cursor: pointer;
 }
+
 .navigation .mobile-button:hover .mobile-icon::before {
-  top: -0.5rem;
+  top: -.5rem;
 }
+
 .navigation .mobile-button:hover .mobile-icon::after {
-  top: 0.5rem;
+  top: .5rem;
 }
+
 .navigation .mobile-checkbox:checked + .mobile-button .mobile-icon {
   background-color: transparent;
 }
+
 .navigation .mobile-checkbox:checked + .mobile-button .mobile-icon::before {
   top: 0;
   transform: rotate(135deg);
 }
+
 .navigation .mobile-checkbox:checked + .mobile-button .mobile-icon::after {
   top: 0;
   transform: rotate(-135deg);
@@ -173,13 +199,16 @@ nav .button a {
 .header {
   text-align: center;
 }
+
 .header-image {
   overflow: hidden;
 }
+
 .header-image img {
   margin-left: 1.5rem;
   max-height: 19rem;
 }
+
 .header h2 {
   padding: 1.5rem 0;
   font-size: calc(1.5rem + 2.5vw);
@@ -188,11 +217,13 @@ nav .button a {
   letter-spacing: -1px;
   line-height: 1.2;
 }
+
 .header p {
   margin: 0 auto 2.5rem auto;
   max-width: 30rem;
   padding: 0 1rem;
 }
+
 .header .button {
   margin-bottom: 5rem;
 }
@@ -205,11 +236,13 @@ main {
   align-items: center;
   flex-flow: column nowrap;
 }
+
 main .spacer {
   background-color: white;
   width: 100%;
   height: 4.1rem;
 }
+
 main .form-field {
   background: url("../images/bg-shorten-mobile.svg"), #3b3054;
   background-position: top right;
@@ -223,36 +256,42 @@ main .form-field {
   width: calc(100% - 2.4rem);
   max-width: 1100px;
 }
+
 main .form-field input {
-  height: 0.5rem;
+  height: .5rem;
   border-radius: 5px;
   border: none;
   padding: 1rem;
   font-weight: 700;
   font-size: 15px;
 }
+
 main .form-field input::placeholder {
   font-size: 15px;
   font-weight: 500;
   color: #bfbfbf;
   line-height: 1;
 }
+
 main .form-field input.empty {
   border: 3px solid #f46262;
 }
+
 main .form-field #error-mobile {
   color: #f46262;
   font-style: italic;
   font-size: 13px;
-  padding-top: 0.4rem;
+  padding-top: .4rem;
   text-align: left;
   display: none;
 }
+
 main .form-field #error-mobile.visible {
   display: block;
 }
+
 main .form-field #shorten-button {
-  margin-top: 0.8rem;
+  margin-top: .8rem;
   height: 2.5rem;
   background-color: #2acfcf;
   color: white;
@@ -261,14 +300,17 @@ main .form-field #shorten-button {
   font-weight: 700;
   transition: all 300ms;
 }
+
 main .form-field #shorten-button:hover {
-  opacity: 0.5;
+  opacity: .5;
   color: white;
   cursor: pointer;
 }
+
 main #error-desktop {
   display: none;
 }
+
 main #error-desktop.visible {
   display: none;
 }
@@ -280,10 +322,11 @@ main #error-desktop.visible {
   width: calc(100% - 2.4rem);
   margin: 0 1.2rem 2.8rem 1.2rem;
 }
+
 .results .result {
   background-color: white;
   border-radius: 10px;
-  padding: 0.75rem 0;
+  padding: .75rem 0;
   display: flex;
   flex-flow: column nowrap;
   text-align: left;
@@ -291,34 +334,40 @@ main #error-desktop.visible {
   margin: 0 auto 1.2rem auto;
   word-break: break-word;
 }
+
 .results .result p {
-  margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+  margin: .25rem .75rem .25rem .75rem;
   color: #232127;
   word-wrap: break-word;
 }
+
 .results .result hr {
   border: none;
   border-top: 1px solid #f2f1f3;
   width: 100%;
 }
+
 .results .result .newUrl {
   color: #2acfcf;
   word-break: keep-all;
 }
+
 .results .result .copy-button {
   background-color: #2acfcf;
   border-radius: 5px;
   color: white;
-  margin: 0.75rem 0.75rem 0 0.75rem;
+  margin: .75rem .75rem 0 .75rem;
   font-size: 16px;
-  padding: 0.5rem 0;
+  padding: .5rem 0;
   width: 8rem;
 }
+
 .results .result .copy-button:hover {
-  opacity: 0.5;
+  opacity: .5;
   color: white;
   cursor: pointer;
 }
+
 .results .result .copy-button.copied {
   background-color: #3b3054;
 }
@@ -327,9 +376,11 @@ main #error-desktop.visible {
   margin: 0 2rem;
   max-width: 30rem;
 }
+
 .features-title h3 {
   font-size: calc(1.2rem + 1.5vw);
 }
+
 .features-title p {
   font-size: 16px;
 }
@@ -339,17 +390,20 @@ main #error-desktop.visible {
   display: flex;
   flex-flow: column nowrap;
 }
+
 .features .teal-cord {
   position: absolute;
   background-color: #2acfcf;
   height: 50rem;
-  width: 0.5rem;
+  width: .5rem;
   left: 50%;
   transform: translate(-50%, 0);
 }
+
 .features .feature-container {
   position: relative;
 }
+
 .features .circle {
   background-color: #3b3054;
   border-radius: 50%;
@@ -361,10 +415,12 @@ main #error-desktop.visible {
   left: 50%;
   transform: translate(-50%, 0);
 }
+
 .features .spacer {
   height: 2.5rem;
   background-color: transparent;
 }
+
 .features .feature {
   background-color: white;
   border-radius: 5px;
@@ -373,10 +429,12 @@ main #error-desktop.visible {
   padding-top: 3.8rem;
   max-width: 20rem;
 }
+
 .features .feature h4 {
   font-weight: 700;
   font-size: 22px;
 }
+
 .features .feature p {
   font-size: 14px;
   line-height: 1.8;
@@ -390,11 +448,13 @@ main #error-desktop.visible {
   padding: 5rem 0;
   text-align: center;
 }
+
 .cta h5 {
   font-size: calc(1rem + 2vw);
   color: white;
   font-weight: 700;
 }
+
 .cta .button {
   margin: 2rem 0 1rem 0;
 }
@@ -412,31 +472,38 @@ footer {
   padding: 3rem 2rem;
   text-align: center;
 }
+
 footer .logo {
   max-width: 6rem;
 }
+
 footer .column {
   display: flex;
   flex-flow: column nowrap;
 }
+
 footer .column a {
   font-size: 16px;
-  margin: 0.2rem 0;
+  margin: .2rem 0;
   letter-spacing: -1px;
 }
+
 footer .column .title {
   color: white;
   font-weight: 700;
-  margin: 1.8rem 0 0.8rem 0;
+  margin: 1.8rem 0 .8rem 0;
   letter-spacing: 0;
 }
+
 footer .social-links {
   display: flex;
   margin-top: 2.5rem;
 }
+
 footer .social-links li a {
-  padding: 0.65rem;
+  padding: .65rem;
 }
+
 footer .social-links i {
   color: white;
   font-size: 24px;
@@ -446,12 +513,10 @@ footer .social-links i {
   .mobile-menu-container {
     display: none;
   }
-
   .menu,
-.login {
+  .login {
     display: flex;
   }
-
   nav {
     max-width: 1100px;
     display: flex;
@@ -464,11 +529,9 @@ footer .social-links i {
   nav .expand {
     flex-grow: 100;
   }
-
   .header p {
     padding: 0;
   }
-
   main .spacer {
     height: 4.5rem;
   }
@@ -507,14 +570,13 @@ footer .social-links i {
     color: #f46262;
     font-style: italic;
     font-size: 14px;
-    padding-top: 0.3rem;
+    padding-top: .3rem;
     text-align: left;
     z-index: 100;
   }
   main #error-desktop.visible.visible {
     display: block;
   }
-
   .results {
     margin-bottom: 3.8rem;
   }
@@ -525,20 +587,19 @@ footer .social-links i {
     padding: 1rem 0;
   }
   .results .result p {
-    margin: 0.25rem 0.75rem 0.25rem 1.3rem;
+    margin: .25rem .75rem .25rem 1.3rem;
   }
   .results .result hr {
     border-top: none;
     width: 0%;
   }
   .results .result .newUrl {
-    padding: 0.25rem 1.3rem 0 0.75rem;
+    padding: .25rem 1.3rem 0 .75rem;
   }
   .results .result .copy-button {
-    padding: 0.4rem 1.8rem;
+    padding: .4rem 1.8rem;
     margin: 0 1.2rem 0 0;
   }
-
   .features {
     flex-direction: row;
     position: relative;
@@ -555,19 +616,18 @@ footer .social-links i {
     transform: translate(-20%, 0);
   }
   .features .feature {
-    margin: 0 0.3rem 2.8rem 0.3rem;
+    margin: 0 .3rem 2.8rem .3rem;
     text-align: left;
     padding: 3.8rem 1.3rem 2rem 1.3rem;
   }
   .features .teal-cord {
     position: absolute;
     background-color: #2acfcf;
-    height: 0.5rem;
+    height: .5rem;
     width: 30rem;
     top: 46%;
     transform: translate(-46%, -50%);
   }
-
   footer {
     flex-flow: row nowrap;
     justify-content: start;
@@ -589,12 +649,13 @@ footer .social-links i {
     white-space: nowrap;
   }
   footer .column .title {
-    margin: 0 0 0.8rem 0;
+    margin: 0 0 .8rem 0;
   }
   footer a {
     transition: all 300ms;
   }
-  footer a:hover, footer a:hover i {
+  footer a:hover,
+  footer a:hover i {
     color: #2acfcf;
   }
   footer a i {
@@ -604,6 +665,7 @@ footer .social-links i {
     margin-top: 0;
   }
 }
+
 @media screen and (min-width: 930px) {
   .header {
     display: flex;
@@ -635,24 +697,25 @@ footer .social-links i {
     margin-left: 1.7rem;
     max-width: calc(24rem + 5vw);
   }
-
   .features .feature {
-    margin: 0 0.8rem 2.8rem 0.8rem;
+    margin: 0 .8rem 2.8rem .8rem;
     text-align: left;
     padding: 3.8rem 1.8rem 2rem 1.8rem;
   }
   .features .teal-cord {
     position: absolute;
     background-color: #2acfcf;
-    height: 0.5rem;
+    height: .5rem;
     min-width: 40rem;
     max-width: 50rem;
     top: 46%;
     transform: translate(-46%, -50%);
   }
 }
+
 @media screen and (min-width: 1124px) {
   .header h2, .header p {
     margin-left: 0;
   }
 }
+/*# sourceMappingURL=style.css.map */

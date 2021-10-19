@@ -338,9 +338,9 @@ main {
         display: flex;
         flex-flow: column nowrap;
         text-align: left;
-        width: 100%;
         max-width: $max-container-width;
         margin: 0 auto 1.2rem auto;
+        word-break: break-word; 
 
         p {
             margin: .25rem .75rem .25rem .75rem;
@@ -356,6 +356,7 @@ main {
 
         .newUrl {
             color: $cyan;
+            word-break: keep-all;
         }
 
         .copy-button {
@@ -365,6 +366,7 @@ main {
             margin: .75rem .75rem 0 .75rem;
             font-size: 16px;
             padding: .5rem 0;
+            width: 8rem;
 
             &:hover {
                 opacity: .5;
