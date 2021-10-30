@@ -682,6 +682,10 @@ footer .social-links i {
   .header h2, .header p {
     margin-left: 0;
   }
+
+  main #error-desktop.visible {
+    left: calc((100vw - 1100px) / 2 + 2.5rem);
+  }
 }
 @keyframes pulseLoading {
   from {

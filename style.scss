@@ -345,6 +345,8 @@ main {
     }
 
     #error-desktop {
+        // max-width: $max-container-width;
+        // margin: 0 auto;
         display: none;   
         &.visible {
             display: none;   
@@ -809,6 +811,12 @@ footer {
     .header {
         h2, p {
             margin-left: 0;
+        }
+    }
+
+    main {
+        #error-desktop.visible {
+            left: calc((100vw - 1100px) / 2 + 2.5rem);
         }
     }
 }
